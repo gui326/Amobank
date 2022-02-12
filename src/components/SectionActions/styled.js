@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
 export const CardArea = styled.View` 
     width: 100%;

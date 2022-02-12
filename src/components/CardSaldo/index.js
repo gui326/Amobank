@@ -16,7 +16,7 @@ export default function CardSaldo(){
             }}>
             <LeftSide>
                 <TextSaldo>Saldo</TextSaldo>
-                <TextValue>{visivel? 'R$ 1.523,00' : 'nada'}</TextValue>
+                <TextValue>{visivel? 'R$ 1.523,00' : '****'}</TextValue>
             </LeftSide>
             <RightSide>
                 <Feather

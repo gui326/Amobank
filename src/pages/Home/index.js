@@ -1,10 +1,11 @@
 import React from 'react';   
+import { ScrollView } from "react-native";
 
-import { Container, Titulo } from "./styled";
+import { Container } from "./styled";
 
-import Header from "../components/Header";
-import CardSaldo from '../components/CardSaldo';
-import SectionActions from '../components/SectionActions';
+import Header from "../../components/Header";
+import CardSaldo from '../../components/CardSaldo';
+import SectionActions from '../../components/SectionActions';
 
 export default function Home(){
     return(
@@ -13,7 +14,10 @@ export default function Home(){
 
             <CardSaldo/>
 
-            <SectionActions/>
+            <ScrollView
+            >
+                <SectionActions/>
+            </ScrollView>
             
         </Container>
     );
