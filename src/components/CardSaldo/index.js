@@ -7,13 +7,7 @@ export default function CardSaldo(){
     const [visivel, setVisivel] = useState(true);
 
     return(
-        <Card style={{
-            elevation: 7,
-            shadowColor: '#000000',
-            shadowOffset: {width: -2, height: 4},
-            shadowOpacity: 0.2,
-            shadowRadius: 3,
-            }}>
+        <Card>
             <LeftSide>
                 <TextSaldo>Saldo</TextSaldo>
                 <TextValue>{visivel? 'R$ 1.523,00' : '****'}</TextValue>

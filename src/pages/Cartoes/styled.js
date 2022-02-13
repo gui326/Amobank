@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.View` 
-    margin: 5%;
+    padding: 5% 5% 0 5%;
+    flex: 1;
+    background-color: #FFFFFF;
 `;
 
 export const Background = styled.View` 
@@ -14,7 +16,7 @@ export const Card = styled.View`
     padding: 5%;
     background-color: #506FDD;
     flex-direction: row;
-    margin-top: 5%;
+    margin-bottom: 5%;
 `;
 
 export const LeftSide = styled.View` 
@@ -41,4 +43,14 @@ export const CardNome = styled.Text`
 
 export const CardNumber = styled.Text` 
     color: white;
+    padding-top: 5px;
+    font-size: 20px;
+`;
+
+export const TituloCard = styled.Text` 
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
 `;

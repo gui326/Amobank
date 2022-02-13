@@ -9,16 +9,12 @@ export default function Header(){
         <HeaderArea>
             <FontAwesome
             name="user-circle"
-            size={40}
-            color={'#000000'}
+            size={35}
             />
-
-            <Logo>Amobank</Logo>
 
             <FontAwesome
             name="gear"
-            size={40}
-            color={'#000000'}
+            size={35}
             />
         </HeaderArea>
     );

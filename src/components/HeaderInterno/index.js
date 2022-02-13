@@ -1,23 +1,23 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { HeaderArea, Titulo } from "./styled";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+import Feather from "react-native-vector-icons/Feather";
 import { TouchableOpacity } from "react-native";
 
-export default function HeaderInterno(){
+export default function HeaderInterno(props){
     const navigation = useNavigation();
 
     return(
         <HeaderArea>
-            <TouchableOpacity
+            <TouchableOpacity style={{ width: 50, height: 33 }}
                 onPress={() => navigation.goBack()}
             >
-                <FontAwesome
-                name="close"
-                size={40}
+                <Feather
+                name="x"
+                size={33}
                 />
             </TouchableOpacity>
-            <Titulo>Meus Cartões</Titulo>
+            <Titulo>{props.titulo}</Titulo>
         </HeaderArea>
     );
 }

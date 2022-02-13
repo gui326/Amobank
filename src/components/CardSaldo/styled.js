@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Card = styled.View` 
     background: #506FDD;
-    margin-top: 7%;
+    margin-top: 10%;
     padding: 15% 7%;
     border-radius: 25px;
     flex-direction: row;

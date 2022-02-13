@@ -1,6 +1,6 @@
 import React from "react";
-import { Image, Text } from "react-native";
-import { Container, Background, Card, LeftSide, RightSide, MiddleSide, CardNome, CardNumber } from "./styled";
+import { Image } from "react-native";
+import { Container, TituloCard, Background, Card, LeftSide, RightSide, MiddleSide, CardNome, CardNumber } from "./styled";
 
 import HeaderInterno from "../../components/HeaderInterno";
 
@@ -10,7 +10,7 @@ import { ScrollView } from "react-native-gesture-handler";
 export default function Cartoes(){
     return(
         <Container>
-            <HeaderInterno/>
+            <HeaderInterno titulo="Meus Cartões"/>
 
             <ScrollView
             showsVerticalScrollIndicator={false}
@@ -22,7 +22,7 @@ export default function Cartoes(){
                     />
                 </Background>
 
-                <Text>Cartões Físicos</Text>
+                <TituloCard>Cartões Físicos</TituloCard>
 
                 <Card>
                     <LeftSide>
@@ -38,7 +38,7 @@ export default function Cartoes(){
                     <RightSide>
                         <FontAwesome
                         name="chevron-right"
-                        size={30}
+                        size={20}
                         />
                     </RightSide>
                 </Card>
@@ -57,13 +57,13 @@ export default function Cartoes(){
                     <RightSide>
                         <FontAwesome
                         name="chevron-right"
-                        size={30}
+                        size={20}
                         />
                     </RightSide>
                 </Card>
 
 
-                <Text style={{ marginTop: 30 }}>Cartões Virtuais</Text>
+                <TituloCard style={{ marginTop: 30 }}>Cartões Virtuais</TituloCard>
 
                 <Card>
                     <LeftSide>
@@ -79,7 +79,7 @@ export default function Cartoes(){
                     <RightSide>
                         <FontAwesome
                         name="chevron-right"
-                        size={30}
+                        size={20}
                         />
                     </RightSide>
                 </Card>
@@ -98,7 +98,26 @@ export default function Cartoes(){
                     <RightSide>
                         <FontAwesome
                         name="chevron-right"
+                        size={20}
+                        />
+                    </RightSide>
+                </Card>
+
+                <Card>
+                    <LeftSide>
+                        <FontAwesome
+                        name="credit-card"
                         size={30}
+                        />
+                    </LeftSide>
+                    <MiddleSide>
+                        <CardNome>Guilherme B Silva</CardNome>
+                        <CardNumber>4812 ****</CardNumber>
+                    </MiddleSide>
+                    <RightSide>
+                        <FontAwesome
+                        name="chevron-right"
+                        size={20}
                         />
                     </RightSide>
                 </Card>
